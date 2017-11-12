@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         private String Name;
         private String Password;
 
-        Button login;
+        Button login, register;
 
 
         @Override
@@ -35,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
                     setLogin();
                 }
             });
+            register = (Button) findViewById(R.id.registerbtn);
+
+            register.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    setLogin();
+                }
+            });
+
 
 
 
