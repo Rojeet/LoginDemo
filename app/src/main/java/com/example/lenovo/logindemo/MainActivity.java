@@ -10,8 +10,8 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-        EditText username;
-        EditText password;
+       private EditText username;
+       private EditText password;
 
         private String Name;
         private String Password;
@@ -23,30 +23,25 @@ public class MainActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
-            EditText editTextUserName = (EditText) findViewById(R.id.nametxt);
+            EditText editTextUserName = (EditText) findViewById(R.id.name);
             Name = editTextUserName.getText().toString();
-            EditText editTextPassword = (EditText)findViewById(R.id.passwordtxt);
+            EditText editTextPassword = (EditText)findViewById(R.id.password);
             Password = editTextPassword.getText().toString();
-            login = (Button) findViewById(R.id.loginbtn);
+            login = (Button) findViewById(R.id.login);
 
             login.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    setLogin();
-                }
-            });
-            register = (Button) findViewById(R.id.registerbtn);
-
-            register.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    setLogin();
-                }
-            });
-
-
-
-
+                                         @Override
+                                         public void onClick(View view) {
+                                             setLogin();
+                                         }
+                                     });
+                    register = (Button) findViewById(R.id.register);
+                    register.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            setLogin();
+                        }
+                    });
         }
 
         public void setLogin() {

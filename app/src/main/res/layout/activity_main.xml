@@ -11,7 +11,7 @@
 
 
     <EditText
-        android:id="@+id/nametxt"
+        android:id="@+id/name"
         android:layout_width="272dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -20,7 +20,8 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/username"
-        android:inputType="textPersonName"
+        android:drawableStart="@drawable/user"
+        android:inputType="text"
         android:textColorHint="@android:color/black"
         android:textSize="30sp"
         android:visibility="visible"
@@ -31,13 +32,14 @@
         app:layout_constraintVertical_bias="0.256" />
 
     <EditText
-        android:id="@+id/passwordtxt"
+        android:id="@+id/password"
         android:layout_width="268dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/pw"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
@@ -45,13 +47,12 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374" />
+        app:layout_constraintVertical_bias="0.464" />
 
     <Button
-        android:id="@+id/loginbtn"
+        android:id="@+id/login"
         android:layout_width="134dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -63,13 +64,14 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628"
-        tools:textColor="@android:color/background_light" />
+        app:layout_constraintVertical_bias="0.691"
+        tools:textColor="@android:color/background_dark" />
 
     <Button
-        android:id="@+id/registerbtn"
+        android:id="@+id/register"
         android:layout_width="134dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -81,10 +83,11 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807"
-        tools:textColor="@android:color/background_light" />
+        app:layout_constraintVertical_bias="0.691"
+        tools:textColor="@android:color/background_dark" />
 
     <ImageView
         android:layout_width="91dp"
@@ -101,37 +104,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.083" />
 
-    <ImageView
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
-
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/pw"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.024"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <ImageView
-        android:layout_width="43dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
-
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/user"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.024"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.246" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:SpinnerMode="Dropdown"
+        />
 
 
 </android.support.constraint.ConstraintLayout>
