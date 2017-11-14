@@ -11,16 +11,16 @@
 
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/username"
         android:layout_width="272dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/user"
         android:ems="10"
         android:hint="@string/username"
-        android:drawableStart="@drawable/user"
         android:inputType="text"
         android:textColorHint="@android:color/black"
         android:textSize="30sp"
@@ -90,13 +90,15 @@
         tools:textColor="@android:color/background_dark" />
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="91dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="8dp"
 
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/home"
         android:src="@drawable/home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -110,6 +112,23 @@
         android:layout_height="wrap_content"
         android:SpinnerMode="Dropdown"
         />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:rating="2.0"
+        android:stepSize="1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.894" />
 
 
 </android.support.constraint.ConstraintLayout>
